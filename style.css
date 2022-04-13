@@ -556,15 +556,20 @@ h2 {
 }
 
 @media (max-width:720px) {
+    .main-container {
+        grid-template-rows: 8% 7% 7% 20% 43% 7% 8%;
+    }
     .name {
         grid-area: 2/2/5/6;
     }
     .portfolio-right {
-        flex-direction: column;
         overflow-y: auto;
+        justify-content: flex-start;
+        gap: 0.5rem;
     }
     .box {
-        width: 20rem;
+        width: 15rem;
+        height: 18rem;
     }
     .image-and-about {
         overflow: hidden;
@@ -578,8 +583,20 @@ h2 {
     .header-left, .header-right, .border-left, .border-right, .footer-left, .footer-right {
         background-color: var(--secondary);
     }
-    .view-all-yellow a {
-        display: none;
+    .view-all-yellow {
+        grid-area: none;
+    }
+    .view-all-black {
+        grid-area: none;
+    }
+    .socials {
+        grid-area: 6/2/7/6;
+        justify-content: center;
+        padding-left: 0;
+        flex-wrap: nowrap;
+    }
+    .box:hover img {
+        transform: none;
     }
 }
 
