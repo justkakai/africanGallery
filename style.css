@@ -600,6 +600,12 @@ h2 {
     }
 }
 
+@media (max-width:530px) {
+    .box {
+        width: 11rem;
+    }
+}
+
 /************** HEIGHT **************/
 
 @media (max-height:800px) {
