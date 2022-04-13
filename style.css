@@ -283,8 +283,8 @@ li:nth-of-type(2):hover li:first-of-type>a, li:nth-of-type(2):hover + li:nth-of-
 }
 
 .image-and-about img {
-    width: 30rem;
-    height: 25rem;
+    width: 25rem;
+    height: 15rem;
     /* margin-left: 6rem; */
     padding-bottom: 1rem;
     /* border: 2px solid red; */
@@ -487,7 +487,7 @@ h2 {
 
 /* ----------------- MEDIA QUERIES ------------------*/
 
-@media (max-width:1680px) {
+@media (max-width:1750px) {
     .name p:first-child, .name p:nth-child(2) {
         font-size: 5rem;
     }
@@ -498,18 +498,61 @@ h2 {
         width: 25rem;
         height: 20rem;
     }
+    .box {
+        width: 13rem;
+    }
+}
+
+@media (max-width:1536px) {
+    .name p:first-child, .name p:nth-child(2) {
+        font-size: 5rem;
+    }
+    .name p:nth-child(2) {
+        line-height: 4rem;
+    }
+    .image-and-about img {
+        width: 25rem;
+        height: 20rem;
+    }
+    .portfolio-right {
+        padding-right: 3rem;
+        gap: 1rem;
+    }
+    .box {
+        width: 13rem;
+    }
 }
 
 @media (max-width:1450px) {
-    .name p:first-child, .name p:nth-child(2) {
-        font-size: 4rem;
+    .name p:first-child {
+        margin-left: 15rem;
     }
     .name p:nth-child(2) {
-        line-height: 2rem;
+        margin-left: 33rem;
+    }
+    .text-box {
+        line-height: 1.8em;
+    }
+    .text-box p {
+        font-size: 0.9rem;
+    }
+    .portfolio-right {
+        padding-right: 3rem;
+        gap: 1rem;
+    }
+    .box {
+        width: 11rem;
     }
 }
 
-@media (max-width:1300px) {
+@media (min-width:1370.1px) and (max-width:1615px) {
+    .name p:last-child {
+        font-size: 1.4rem;
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width:1370px) {
     .name {
         gap: 20px;
     }
@@ -523,5 +566,29 @@ h2 {
     .name p:last-child {
         margin: 2rem auto 0 auto;
         font-size: 1.4rem;
+    }
+    .text-box {
+        display: none;
+    }
+}
+
+@media (max-width:1176px) {
+    .box {
+        height: 9rem;
+        width: 9rem;
+    }
+    .portfolio-right {
+        gap: 1rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width:845px) {
+    .box {
+        height: 9rem;
+        width: 9rem;
+    }
+    .portfolio-right {
+        gap: 1.5rem;
     }
 }
