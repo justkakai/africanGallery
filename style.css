@@ -414,6 +414,8 @@ h2 {
 
 /* ----------------- MEDIA QUERIES ------------------*/
 
+/************** WIDTH **************/
+
 @media (max-width:1750px) {
     .name p:first-child, .name p:nth-child(2) {
         font-size: 5rem;
@@ -554,10 +556,66 @@ h2 {
 }
 
 @media (max-width:720px) {
-    .image-and-about, .portfolio-right {
+    .name {
+        grid-area: 2/2/5/6;
+    }
+    .portfolio-right {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .box {
+        width: 20rem;
+    }
+    .image-and-about {
         overflow: hidden;
     }
     .image-and-about img {
-        width: 22rem;
+        display: none;
     }
+    .image-and-about, .menu-right, .view-all-black {
+        background-color: var(--primary);
+    }
+    .header-left, .header-right, .border-left, .border-right, .footer-left, .footer-right {
+        background-color: var(--secondary);
+    }
+    .view-all-yellow a {
+        display: none;
+    }
+}
+
+/************** HEIGHT **************/
+
+@media (max-height:800px) {
+    .image-and-about img {
+        height: 20rem;
+    }  
+}
+
+@media (max-height:700px) {
+    .image-and-about img {
+        height: 17rem;
+    }  
+    .box {
+        height: 7rem;
+    }
+}
+
+@media (max-height:600px) {
+    .image-and-about img {
+        width: 18rem;
+        height: 13rem;
+    }  
+}
+
+@media (max-height:450px) {
+    .image-and-about img {
+        width: 15rem;
+        height: 10rem;
+    }
+    .box {
+        height: 5rem;
+    }
+    .text-box {
+        display: none;
+    }  
 }
