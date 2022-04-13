@@ -118,14 +118,6 @@ body {
     font-weight: bold;
     margin-left: 18rem;
     position: relative;
-
-    /* animation-name: Kakai;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards; */
-    
-    /* transition-duration: transform;
-    transition-duration: 2s; */
 }
 
 .name p:nth-child(2) {
@@ -559,6 +551,9 @@ h2 {
     .main-container {
         grid-template-rows: 8% 7% 7% 20% 43% 7% 8%;
     }
+    .menu-right ul {
+        padding-top: 0;
+    }
     .name {
         grid-area: 2/2/5/6;
     }
@@ -601,6 +596,12 @@ h2 {
 }
 
 @media (max-width:530px) {
+    .name {
+        gap: 5px;
+    }
+    .name p:first-child, .name p:nth-child(2) {
+        font-size: 4rem;
+    }
     .box {
         width: 11rem;
     }
